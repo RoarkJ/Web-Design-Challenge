@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+  <link rel="stylesheet" type="text/css" href="custom.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-light">
+  <a class="navbar-brand" href="index.html">Latitude</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon bg-info"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+		
+		<!-- Dropdown -->
+		<div class="dropdown">
+		  <button class="btn dropdown-toggle text-dark" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+		  Plots
+		  </button>
+		  <div class="dropdown-menu" style="left: -100px;">
+			<a class="dropdown-item" href="max-temp.html">Max Temperature</a>
+			<a class="dropdown-item" href="humidity.html">Humidity</a>
+			<a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+			<a class="dropdown-item" href="wind-speed.html">Wind Speed</a>
+		  </div>
+		</div>
+		</li>
+		<li class="nav-item">
+        <a class="nav-link text-dark" href="comparison.html">Comparison</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="data.html">Data</a>
+      </li>
+    </ul>
+  </div> 
+
+</nav>
+<div class="jumbotron">
+<div class="container">
+	<div class="row">
+		  <div class="col-md-12">
+			  <h3>Comparison: Latitude vs X</h3>
+			  <hr/>
+			  <p>Click any plot to get an in-depth analysis.</p>
+			  <div class="w3-container">
+			  <div class="box" style="width:50%;">
+				<header class="w3-container w3-center">
+				  <h1 class="w3-large">Max Temperature</h1>
+				</header>
+			    <div class="box">
+				  <a href="max-temp.html"><img src="WebVisualizations/Resources/assets/images/Fig1.png" style="width:95%;"></a>
+			    </div>
+			  </div>
+			  	<div class="box" style="width:50%;">
+				<header class="w3-container w3-center">
+				  <h1 class="w3-large">Humidity</h1>
+				</header>
+			    <div class="box">
+				  <a href="humidity.html"><img src="WebVisualizations/Resources/assets/images/Fig2.png" style="width:95%"></a>
+			    </div>
+			  </div>
+			  	<div class="box" style="width:50%;">
+				<header class="w3-container w3-center">
+				  <h1 class="w3-large">Cloudiness</h1>
+				</header>
+			    <div class="box">
+				  <a href="cloudiness.html"><img src="WebVisualizations/Resources/assets/images/Fig3.png" style="width:95%"></a>
+			    </div>
+			  </div>
+			  	<div class="box" style="width:50%;">
+				<header class="w3-container w3-center">
+				  <h1 class="w3-large">Wind Speed</h1>
+				</header>
+			    <div class="box">
+				  <a href="wind-speed.html"><img src="WebVisualizations/Resources/assets/images/Fig4.png" style="width:95%"></a>
+			    </div>
+			  </div>
+			  </div>
+		</div>
+    </div>
+</div>
+</div>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
