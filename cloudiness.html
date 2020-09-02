@@ -1,109 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
-  <link rel="stylesheet" type="text/css" href="custom.css">
+<title>Weather Analysis</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+<link rel="stylesheet" type="text/css" href="custom.css">
 </head>
 <body>
-
 <nav class="navbar navbar-expand-md navbar-light">
   <a class="navbar-brand" href="index.html">Latitude</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon bg-info"></span>
+	<span class="navbar-toggler-icon bg-info"></span>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav ml-auto">
-		
-		<!-- Dropdown -->
-		<div class="dropdown">
-		  <button class="btn dropdown-toggle text-dark" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+	<ul class="navbar-nav ml-auto">	
+	  <!-- Dropdown -->
+	  <div class="dropdown">
+		<button class="btn dropdown-toggle text-dark" type="button" id="dropdownMenuButton" data-toggle="dropdown">
 		  Plots
-		  </button>
-		  <div class="dropdown-menu" style="left: -100px;">
-			<a class="dropdown-item" href="max-temp.html">Max Temperature</a>
-			<a class="dropdown-item" href="humidity.html">Humidity</a>
-			<a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-			<a class="dropdown-item" href="wind-speed.html">Wind Speed</a>
-		  </div>
+		</button>
+		<div class="dropdown-menu" style="left: -100px;">
+		  <a class="dropdown-item" href="max-temp.html">Max Temperature</a>
+		  <a class="dropdown-item" href="humidity.html">Humidity</a>
+		  <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+		  <a class="dropdown-item" href="wind-speed.html">Wind Speed</a>
 		</div>
-		<li class="nav-item">
-        <a class="nav-link text-dark" href="comparison.html">Comparison</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-dark" href="data.html">Data</a>
-      </li>
-    </ul>
+	  </div>
+	  <li class="nav-item">
+		<a class="nav-link text-dark" href="comparison.html">Comparison</a>
+	  </li>
+	  <li class="nav-item">
+		<a class="nav-link text-dark" href="data.html">Data</a>
+	  </li>
+	</ul>
   </div> 
-
 </nav>
 <div class="jumbotron">
-<div class="container">
+  <div class="container">
 	<div class="row">
-		<div class="col-md-7">
-		  <h2>Cloudiness</h2>
+	  <div class="col-md-7">
+		<h2>Cloudiness</h2>
+		<hr/>
+		<img src="WebVisualizations/Resources/assets/images/Fig3.png" alt="cloudiness" id="viz_img">
+
+		<p>As expected, the weather becomes signaificantly warmer as one approaches 
+		 the equator (0 Deg. Latitude). More iinterestingly, however, is the fact 
+		 that the southern hemisphere tends to be warmer this time of the year than
+		 the northern hemisphere. This may be due to the tilt of the earth at the
+		 time this data was gathered.
+		</p>
+	  </div>
+	  <div class="col-md-1">
+	  </div>
+	  <div class="col-md-4">
+		<h3>Visualizations</h3>
 		  <hr/>
-		  <img src="WebVisualizations/Resources/assets/images/Fig3.png" id="viz_img">
-
-		  <p>As expected, the weather becomes signaificantly warmer as one approaches 
-			 the equator (0 Deg. Latitude). More iinterestingly, however, is the fact 
-			 that the southern hemisphere tends to be warmer this time of the year than
-			 the northern hemisphere. This may be due to the tilt of the earth at the
-			 time this data was gathered.
-		  </p>
+		<div class="w3-container">
+		  <div class="box" style="width:50%;">
+			<header class="w3-container w3-center">
+			  <h1 class="w3-medium">Max Temperature</h1>
+			</header>
+			<div class="box">
+			  <a href="max-temp.html"><img src="WebVisualizations/Resources/assets/images/Fig1.png" alt="max temperature" style="width:95%; "></a>
+			</div>
+		  </div>
+		  <div class="box" style="width:50%;">
+			<header class="w3-container w3-center">
+			  <h1 class="w3-medium">Humidity</h1>
+			</header>
+			<div class="box">
+			  <a href="humidity.html"><img src="WebVisualizations/Resources/assets/images/Fig2.png" alt="humidity" style="width:95%"></a>
+			</div>
+		  </div>
+		  <div class="box" style="width:50%;">
+			<header class="w3-container w3-center">
+			  <h1 class="w3-medium">Cloudiness</h1>
+			</header>
+			<div class="box">
+			  <a href="cloudiness.html"><img src="WebVisualizations/Resources/assets/images/Fig3.png" alt="cloudiness" style="width:95%; border: solid;border-width: 1px;border-color: green;"></a>
+			</div>
+		  </div>
+		  <div class="box" style="width:50%;">
+			<header class="w3-container w3-center">
+			  <h1 class="w3-medium">Wind Speed</h1>
+			</header>
+			<div class="box">
+			  <a href="wind-speed.html"><img src="WebVisualizations/Resources/assets/images/Fig4.png" alt="wind speed" style="width:95%"></a>
+			</div>
+		  </div>
 		</div>
-		<div class="col-md-1">
-		</div>
-		  <div class="col-md-4">
-			  <h3>Visualizations</h3>
-			  <hr/>
-			  <div class="w3-container">
-			  <div class="box" style="width:50%;">
-				<header class="w3-container w3-center">
-				  <h1 class="w3-medium">Max Temperature</h1>
-				</header>
-			    <div class="box">
-				  <a href="max-temp.html"><img src="WebVisualizations/Resources/assets/images/Fig1.png" style="width:95%; "></a>
-			    </div>
-			  </div>
-			  	<div class="box" style="width:50%;">
-				<header class="w3-container w3-center">
-				  <h1 class="w3-medium">Humidity</h1>
-				</header>
-			    <div class="box">
-				  <a href="humidity.html"><img src="WebVisualizations/Resources/assets/images/Fig2.png" style="width:95%"></a>
-			    </div>
-			  </div>
-			  	<div class="box" style="width:50%;">
-				<header class="w3-container w3-center">
-				  <h1 class="w3-medium">Cloudiness</h1>
-				</header>
-			    <div class="box">
-				  <a href="cloudiness.html"><img src="WebVisualizations/Resources/assets/images/Fig3.png" style="width:95%; border: solid;border-width: 1px;border-color: green;""></a>
-			    </div>
-			  </div>
-			  	<div class="box" style="width:50%;">
-				<header class="w3-container w3-center">
-				  <h1 class="w3-medium">Wind Speed</h1>
-				</header>
-			    <div class="box">
-				  <a href="wind-speed.html"><img src="WebVisualizations/Resources/assets/images/Fig4.png" style="width:95%"></a>
-			    </div>
-			  </div>
-			  </div>
-		</div>
-    </div>
+	  </div>
+	</div>
+  </div>
 </div>
-</div>
-
-
-
 </body>
 </html>
 
